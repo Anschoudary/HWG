@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/game_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Settings"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/play_mode_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play with:" />
+
+    <RadioGroup
+        android:id="@+id/play_mode_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <RadioButton
+            android:id="@+id/play_with_computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="true"
+            android:text="Computer" />
+        <RadioButton
+            android:id="@+id/play_with_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level:" />
+
+    <RadioGroup
+        android:id="@+id/level_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <RadioButton
+            android:id="@+id/level_easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusedByDefault="true"
+            android:text="Easy" />
+        <RadioButton
+            android:id="@+id/level_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+        <RadioButton
+            android:id="@+id/level_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hard" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/music_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music "
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/select_background_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Background"
+        android:padding="8dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/play_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Now"
+        android:padding="8dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
